@@ -25,13 +25,13 @@ struct ConfigurationView: View {
                     HStack {
                         Text("Variant")
                         Spacer()
-                        Stepper("\(configuration.variant)", value: $configuration.variant, in: 0...10)
+                        Stepper("\(configuration.variant)", value: $configuration.variant, in: 0...30)
                     }
                     
                     HStack {
                         Text("Size")
                         Spacer()
-                        Stepper("\(configuration.size)", value: $configuration.size, in: 0...5)
+                        Stepper("\(configuration.size)", value: $configuration.size, in: 0...10)
                     }
                 }
                 
