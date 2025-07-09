@@ -45,10 +45,9 @@
             return context.maximumDetentValue * 0.3;
         }];
     sheetPresentationController.detents = @[
-        smallDetent,
-        UISheetPresentationControllerDetent.largeDetent,
+        smallDetent
     ];
-    sheetPresentationController.largestUndimmedDetentIdentifier = UISheetPresentationControllerDetentIdentifierLarge;
+    sheetPresentationController.largestUndimmedDetentIdentifier = @"smallDetent";
     sheetPresentationController.prefersGrabberVisible = YES;
     configurationViewController.modalInPresentation = YES;
     configurationViewController.modalPresentationStyle = UIModalPresentationFormSheet;
